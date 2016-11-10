@@ -8,22 +8,89 @@
 		content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,minimal-ui">
 	<title>Tidy Print</title>
 	<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 	<link rel="stylesheet" href="fonts/fonts.css">
 	<link rel="stylesheet" href="images/icons/sprite/sprite.css">
 	<link rel="stylesheet" href="shared/helpers.css">
 	<link rel="stylesheet" href="shared/main.css">
 	<link rel="stylesheet" href="components/header/header.component.css">
+	<link rel="stylesheet" href="components/menu/menu.component.css">
 </head>
 
 <body class="likearts-content">
 	<div class="container-fluid">
-		<div class="container no-padding">
-			<h1>Tidy Print</h1>
-		</div>
+		<header>
+			<nav class="menu">
+				<div class="container no-padding">
+					<div class="menu-desktop">
+						<ul class="menu-desktop__list">
+							<li class="menu-desktop__list-item">
+								<a href="#" class="menu-desktop__list-link">Главная</a>
+							</li>
+							<li class="menu-desktop__list-item is-active">
+								<a href="#" class="menu-desktop__list-link">Наши работы</a>
+							</li>
+							<li class="menu-desktop__list-item">
+								<a href="#" class="menu-desktop__list-link">Art-обработка</a>
+							</li>
+							<li class="menu-desktop__list-item">
+								<a href="#" class="menu-desktop__list-link">Гарантия</a>
+							</li>
+							<li class="menu-desktop__list-item">
+								<a href="#" class="menu-desktop__list-link">Видео</a>
+							</li>
+							<li class="menu-desktop__list-item">
+								<a href="#" class="menu-desktop__list-link">Гарантия</a>
+							</li>
+							<li class="menu-desktop__list-item">
+								<a href="#" class="menu-desktop__list-link">Размеры</a>
+							</li>
+							<li class="menu-desktop__list-item">
+								<a href="#" class="menu-desktop__list-link">Контакты</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="menu-mobile">
+					<div id="menuBtn" class="menu-mobile__btn">
+						<i id="menuBtnIcon" class="material-icons menu-mobile__icon">menu</i>
+					</div>
+					<ul id="menuContent" class="paper-shadow-z2 menu-mobile__list">
+						<li class="menu-mobile__list-item">
+							<a href="#" class="menu-mobile__list-link">Главная</a>
+						</li>
+						<li class="menu-mobile__list-item is-active">
+							<a href="#" class="menu-mobile__list-link">Наши работы</a>
+						</li>
+						<li class="menu-mobile__list-item">
+							<a href="#" class="menu-mobile__list-link">Art-обработка</a>
+						</li>
+						<li class="menu-mobile__list-item">
+							<a href="#" class="menu-mobile__list-link">Гарантия</a>
+						</li>
+						<li class="menu-mobile__list-item">
+							<a href="#" class="menu-mobile__list-link">Видео</a>
+						</li>
+						<li class="menu-mobile__list-item">
+							<a href="#" class="menu-mobile__list-link">Гарантия</a>
+						</li>
+						<li class="menu-mobile__list-item">
+							<a href="#" class="menu-mobile__list-link">Размеры</a>
+						</li>
+						<li class="menu-mobile__list-item">
+							<a href="#" class="menu-mobile__list-link">Контакты</a>
+						</li>
+					</ul>
+					<div id="menuOverlay" class="menu-mobile__overlay"></div>
+				</div>
+			</nav>
+		</header>
 	</div>
 
 	<script src="bower_components/jquery/dist/jquery.min.js"></script>
 	<script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+	<script src="bower_components/hammerjs/hammer.min.js"></script>
+	<script src="components/menu/menu.component.js"></script>
 </body>
 
 </html>
