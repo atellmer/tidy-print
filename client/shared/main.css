@@ -7,12 +7,11 @@ body {
 .likearts-content {
   font-family: 'MyseoSansCyrl', sans-serif;
   font-weight: 400;
-  background: #fff;
+  background: #f8f8f8;
   -webkit-font-smoothing: antialiased;
   -webkit-overflow-scrolling: touch;
   overflow-scrolling: touch;
-  color: #000;
-  overflow-x: hidden;
+  color: #181818;
 }
 .likearts-content a:hover {
   outline: none;
@@ -33,5 +32,5 @@ display inline-block,
   margin: 0;
 }
 .likearts-content .container {
-  max-width: 1550px;
+  max-width: 1170px;
 }

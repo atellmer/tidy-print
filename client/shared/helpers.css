@@ -1,6 +1,12 @@
 .no-padding {
-  padding: 0 !important;
-  margin: 0 !important;
+  padding: 0;
+}
+.no-margin {
+  margin: 0;
+}
+.no-gutter {
+  padding: 0;
+  margin: 0;
 }
 .paper-shadow-z1 {
   -webkit-box-shadow: 0 1px 6px rgba(0,0,0,0.12), 0 1px 4px rgba(0,0,0,0.12);
