@@ -1,0 +1,37 @@
+html,
+body {
+  width: 100%;
+  height: auto;
+  min-height: 100%;
+}
+.likearts-content {
+  font-family: 'MyseoSansCyrl', sans-serif;
+  font-weight: 400;
+  background: #fff;
+  -webkit-font-smoothing: antialiased;
+  -webkit-overflow-scrolling: touch;
+  overflow-scrolling: touch;
+  color: #000;
+  overflow-x: hidden;
+}
+.likearts-content a:hover {
+  outline: none;
+  text-decoration: none;
+}
+.likearts-content a:active {
+  outline: none;
+  text-decoration: none;
+}
+.likearts-content a:focus {
+  outline: none;
+  text-decoration: none;
+}
+.likearts-content .icon,
+display inline-block,
+.likearts-content .container-fluid {
+  padding: 0;
+  margin: 0;
+}
+.likearts-content .container {
+  max-width: 1550px;
+}
