@@ -1,0 +1,36 @@
+.likearts-content .print-btn {
+  border: 0;
+  background-color: #1ecef4;
+  color: #fff;
+  border-radius: 50px;
+  font-weight: 700;
+  font-size: 1.8rem;
+  padding: 29px 65px;
+  outline: none;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+.likearts-content .print-btn:focus {
+  outline: none;
+}
+.likearts-content .print-btn:active {
+  -webkit-transform: scale(0.95);
+  -moz-transform: scale(0.95);
+  -o-transform: scale(0.95);
+  -ms-transform: scale(0.95);
+  transform: scale(0.95);
+}
+@media all and (max-width: 992px) {
+  .likearts-content .print-btn {
+    padding: 20px 40px;
+  }
+}
+@media all and (max-width: 768px) {
+  .likearts-content .print-btn {
+    padding: 10px 20px;
+    font-size: 1.4rem;
+  }
+}

@@ -4,8 +4,14 @@
   height: auto;
   min-height: 50px;
   background-color: #212121;
+  z-index: 10000;
 }
-.likearts-content .l-menu {
+@media all and (max-width: 992px) {
+  .likearts-content .menu {
+    position: fixed;
+  }
+}
+.likearts-content .l-menu-desktop {
   width: 100%;
   max-width: 1210px;
   margin: 0 auto;

@@ -1,0 +1,21 @@
+@import '../../shared/variables.styl'
+
+.likearts-content .print-btn
+	border 0
+	background-color $primary-color
+	color #fff
+	border-radius 50px
+	font-weight 700
+	font-size 1.8rem
+	padding 29px 65px
+	outline none
+	transition all .2s ease-in-out
+	&:focus
+		outline none
+	&:active
+		transform scale(0.95)
+	@media all and (max-width: 992px)
+		padding 20px 40px
+	@media all and (max-width: $tablet)
+		padding 10px 20px
+		font-size 1.4rem

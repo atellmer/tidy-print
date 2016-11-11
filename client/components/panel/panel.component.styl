@@ -3,10 +3,24 @@
 .likearts-content .panel
 	width 100%
 	height auto
-	min-height 120px
 	background-color #fff
 	margin 0
 	border 0
+	@media all and (max-width: 992px)
+		padding-top 50px
+
+	&__content
+		width 100%
+		height auto
+		min-height 120px
+		display flex
+		flex-flow row wrap
+		justify-content space-between
+		align-items center
+		padding 15px 0
+		@media all and (max-width: $phone)
+			flex-flow column wrap
+			justify-content center
 
 	&__contacts
 		display flex
@@ -49,23 +63,6 @@
 			font-weight 700
 			@media all and (max-width: $tablet)
 				font-size 1.6rem
-
-.likearts-content .l-panel
-	width 100%
-	max-width $container-width
-	height auto
-	min-height 120px
-	display flex
-	flex-flow row wrap
-	justify-content space-between
-	align-items center
-	margin 0 auto
-	padding 15px 0
-	@media all and (max-width: 1250px)
-		padding 0 15px
-	@media all and (max-width: $phone)
-		flex-flow column wrap
-		justify-content center
 
 .likearts-content .l-logo
 	@media all and (max-width: $phone)

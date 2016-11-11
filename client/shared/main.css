@@ -32,6 +32,35 @@ body {
   padding: 0;
   margin: 0;
 }
-.likearts-content .container {
+.likearts-content .main-layout {
   max-width: 1170px;
+  margin: 0 auto;
+}
+@media all and (max-width: 1250px) {
+  .likearts-content .main-layout {
+    padding: 0 15px;
+  }
+}
+.likearts-content .section__title {
+  position: relative;
+  z-index: 10;
+}
+.likearts-content .section__title--h1 {
+  margin: 0;
+  color: #fff;
+  font-weight: 300;
+  font-size: 4.3rem;
+}
+.likearts-content .section__title--h1 span {
+  font-weight: 900;
+}
+@media all and (max-width: 992px) {
+  .likearts-content .section__title--h1 {
+    font-size: 3.3rem;
+  }
+}
+@media all and (max-width: 768px) {
+  .likearts-content .section__title--h1 {
+    font-size: 2.3rem;
+  }
 }

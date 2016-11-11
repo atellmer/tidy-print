@@ -17,6 +17,8 @@
 	<link rel="stylesheet" href="components/menu/menu.component.css">
 	<link rel="stylesheet" href="components/panel/panel.component.css">
 	<link rel="stylesheet" href="components/logo/logo.component.css">
+	<link rel="stylesheet" href="components/section-1/section-1.component.css">
+	<link rel="stylesheet" href="components/button/button.component.css">
 </head>
 
 <body class="likearts-content">
@@ -24,7 +26,7 @@
 		<header>
 
 			<nav class="menu">
-				<div class="l-menu">
+				<div class="l-menu-desktop">
 					<div class="menu-desktop">
 						<ul class="menu-desktop__list">
 							<li class="menu-desktop__list-item">
@@ -89,28 +91,69 @@
 			</nav>
 
 			<div class="panel">
-				<div class="l-panel">
-					<div class="l-logo">
-						<div class="logo">
-							<span class="logo__area logo__area--blue logo__area--rounded">Tidy</span>
-							<span class="logo__area">Print</span>
-							<span class="logo__text">Лучший сервис <br> печати на футболках</span>
+				<div class="main-layout">
+					<div class="panel__content">
+						<div class="l-logo">
+							<div class="logo">
+								<span class="logo__area logo__area--blue logo__area--rounded">Tidy</span>
+								<span class="logo__area">Print</span>
+								<span class="logo__text">Лучший сервис <br> печати на футболках</span>
+							</div>
 						</div>
-					</div>
-					<div class="panel__contacts">
-						<span class="panel__contacts-phone">
-							<i class="icon icon-phone--w panel__contacts-icon"></i>
-						</span>
-						<span class="panel__text-group">
-							<span class="panel__text panel__text--phone">8(800)60-07-45</span>
-							<br>
-							<span class="panel__text">Спб, м. Московская, ул. Пушкина д. 63</span>
-						</span>
+						<div class="panel__contacts">
+							<span class="panel__contacts-phone">
+								<i class="icon icon-phone--w panel__contacts-icon"></i>
+							</span>
+							<span class="panel__text-group">
+								<span class="panel__text panel__text--phone">8(800)60-07-45</span>
+								<br>
+								<span class="panel__text">Спб, м. Московская, ул. Пушкина д. 63</span>
+							</span>
+						</div>
 					</div>
 				</div>
 			</div>
 
 		</header>
+
+		<section class="cover section section-1">
+			<div class="main-layout">
+				<h1 class="section__title section__title--h1">
+					<span>Печать изображений на футболках оптом</span>
+					<br>
+						и от  1 штуки с доставкой по всей России
+				</h1>
+				<div class="section-1__content">
+					<div class="l-desc">
+						<div class="section-1__desc">
+							<div class="section-1__desc-item section-1__desc-item--order-1">
+								<span class="num-label">01</span>
+								<span class="section-1__desc-text">Цена футболки <br> от 300 рублей</span>
+							</div>
+							<div class="section-1__desc-item section-1__desc-item--order-2">
+								<span class="num-label">02</span>
+								<span class="section-1__desc-text">Скидки до 30% <br> при оптовом заказе</span>
+							</div>
+							<div class="section-1__desc-item section-1__desc-item--order-3">
+								<span class="num-label">03</span>
+								<span class="section-1__desc-text">Доставка <br> по всей России</span>
+							</div>
+							<div class="section-1__desc-item section-1__desc-item--order-4">
+								<span class="num-label">04</span>
+								<span class="section-1__desc-text">Всегда в наличии <br> все размеры футболок</span>
+							</div>
+						</div>
+						<div class="l-btn">
+							<button class="print-btn"> Отправить заявку на расчет цены</button>
+						</div>
+					</div>
+					<div class="l-image">
+						<img class="img-responsive" src="images/t-shirts.png" alt="alt-text">
+					</div>
+				</div>
+			</div>
+		</section>
+
 	</div>
 
 	<script src="bower_components/jquery/dist/jquery.min.js"></script>
