@@ -1,0 +1,73 @@
+@import '../../shared/variables.styl'
+
+.likearts-content .panel
+	width 100%
+	height auto
+	min-height 120px
+	background-color #fff
+	margin 0
+	border 0
+
+	&__contacts
+		display flex
+		flex-flow row nowrap
+		justify-content space-between
+		align-items center
+		@media all and (max-width: $phone)
+			margin 10px
+
+	&__contacts-phone
+		position relative
+		display block
+		width 51px
+		height 51px
+		background-color $primary-color
+		border-radius 50%
+		margin-right 13px
+		@media all and (max-width: $tablet)
+			display none
+
+	&__contacts-icon
+		position absolute
+		top 50%
+		left 50%
+		transform translate(-50%, -50%)
+
+	&__text-group
+		@media all and (max-width: $phone)
+			text-align center
+
+	&__text
+		font-size 1.6rem
+		font-weight 300
+		transition font-size .2s ease-in-out
+		@media all and (max-width: $tablet)
+			font-size 1.1rem
+
+		&--phone
+			font-size 2.3rem
+			font-weight 700
+			@media all and (max-width: $tablet)
+				font-size 1.6rem
+
+.likearts-content .l-panel
+	width 100%
+	max-width $container-width
+	height auto
+	min-height 120px
+	display flex
+	flex-flow row wrap
+	justify-content space-between
+	align-items center
+	margin 0 auto
+	padding 15px 0
+	@media all and (max-width: 1250px)
+		padding 0 15px
+	@media all and (max-width: $phone)
+		flex-flow column wrap
+		justify-content center
+
+.likearts-content .l-logo
+	@media all and (max-width: $phone)
+		margin 10px
+

@@ -5,6 +5,11 @@
   min-height: 50px;
   background-color: #212121;
 }
+.likearts-content .l-menu {
+  width: 100%;
+  max-width: 1210px;
+  margin: 0 auto;
+}
 @media all and (max-width: 992px) {
   .likearts-content .menu-desktop {
     display: none;
