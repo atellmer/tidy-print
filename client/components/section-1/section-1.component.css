@@ -2,9 +2,15 @@
   position: relative;
   width: 100%;
   height: auto;
+  min-height: 600px;
   background-image: url("../../images/bg/1.png");
   padding: 50px 0 0 0;
   z-index: 3;
+}
+@media all and (max-width: 640px) {
+  .likearts-content .section-1 {
+    min-height: 500px;
+  }
 }
 .likearts-content .section-1__content {
   position: relative;

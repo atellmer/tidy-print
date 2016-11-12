@@ -4,9 +4,12 @@
 	position relative
 	width 100%
 	height auto
+	min-height 600px
 	background-image url('../../images/bg/1.png')
 	padding 50px 0 0 0
 	z-index 3
+	@media all and (max-width: $phone)
+		min-height 500px
 
 	&__content
 		position relative
