@@ -17,8 +17,10 @@
 	<link rel="stylesheet" href="components/menu/menu.component.css">
 	<link rel="stylesheet" href="components/panel/panel.component.css">
 	<link rel="stylesheet" href="components/logo/logo.component.css">
-	<link rel="stylesheet" href="components/section-1/section-1.component.css">
 	<link rel="stylesheet" href="components/button/button.component.css">
+	<link rel="stylesheet" href="components/section-1/section-1.component.css">
+	<link rel="stylesheet" href="components/section-2/section-2.component.css">
+	<link rel="stylesheet" href="components/section-3/section-3.component.css">
 </head>
 
 <body class="likearts-content">
@@ -61,28 +63,28 @@
 						<i id="menuBtnIcon" class="material-icons menu-mobile__icon">menu</i>
 					</div>
 					<ul id="menuContent" class="paper-shadow-z2 menu-mobile__list">
-						<li class="menu-mobile__list-item">
+						<li aria-haspopup="true" class="menu-mobile__list-item">
 							<a href="#" class="menu-mobile__list-link">Главная</a>
 						</li>
-						<li class="menu-mobile__list-item is-active">
+						<li aria-haspopup="true" class="menu-mobile__list-item is-active">
 							<a href="#" class="menu-mobile__list-link">Наши работы</a>
 						</li>
-						<li class="menu-mobile__list-item">
+						<li aria-haspopup="true" class="menu-mobile__list-item">
 							<a href="#" class="menu-mobile__list-link">Art-обработка</a>
 						</li>
-						<li class="menu-mobile__list-item">
+						<li aria-haspopup="true" class="menu-mobile__list-item">
 							<a href="#" class="menu-mobile__list-link">Гарантия</a>
 						</li>
-						<li class="menu-mobile__list-item">
+						<li aria-haspopup="true" class="menu-mobile__list-item">
 							<a href="#" class="menu-mobile__list-link">Видео</a>
 						</li>
-						<li class="menu-mobile__list-item">
+						<li aria-haspopup="true" class="menu-mobile__list-item">
 							<a href="#" class="menu-mobile__list-link">Гарантия</a>
 						</li>
-						<li class="menu-mobile__list-item">
+						<li aria-haspopup="true" class="menu-mobile__list-item">
 							<a href="#" class="menu-mobile__list-link">Размеры</a>
 						</li>
-						<li class="menu-mobile__list-item">
+						<li aria-haspopup="true" class="menu-mobile__list-item">
 							<a href="#" class="menu-mobile__list-link">Контакты</a>
 						</li>
 					</ul>
@@ -94,13 +96,15 @@
 				<div class="main-layout">
 					<div class="panel__content">
 						<div class="l-logo">
-							<div class="logo">
-								<span class="logo__area logo__area--blue logo__area--rounded">Tidy</span>
-								<span class="logo__area">Print</span>
-								<span class="logo__text">Лучший сервис <br> печати на футболках</span>
-							</div>
+							<a href="#">
+								<div class="logo">
+									<span class="logo__area logo__area--blue logo__area--rounded">Tidy</span>
+									<span class="logo__area">Print</span>
+									<span class="logo__text">Лучший сервис <br> печати на футболках</span>
+								</div>
+							</a>
 						</div>
-						<div class="panel__contacts">
+						<address class="panel__contacts">
 							<span class="panel__contacts-phone">
 								<i class="icon icon-phone--w panel__contacts-icon"></i>
 							</span>
@@ -109,7 +113,7 @@
 								<br>
 								<span class="panel__text">Спб, м. Московская, ул. Пушкина д. 63</span>
 							</span>
-						</div>
+						</address>
 					</div>
 				</div>
 			</div>
@@ -127,19 +131,19 @@
 					<div class="l-desc">
 						<div class="section-1__desc">
 							<div class="section-1__desc-item section-1__desc-item--order-1">
-								<span class="num-label">01</span>
+								<span class="section-1__num-label">01</span>
 								<span class="section-1__desc-text">Цена футболки <br> от 300 рублей</span>
 							</div>
 							<div class="section-1__desc-item section-1__desc-item--order-2">
-								<span class="num-label">02</span>
+								<span class="section-1__num-label">02</span>
 								<span class="section-1__desc-text">Скидки до 30% <br> при оптовом заказе</span>
 							</div>
 							<div class="section-1__desc-item section-1__desc-item--order-3">
-								<span class="num-label">03</span>
+								<span class="section-1__num-label">03</span>
 								<span class="section-1__desc-text">Доставка <br> по всей России</span>
 							</div>
 							<div class="section-1__desc-item section-1__desc-item--order-4">
-								<span class="num-label">04</span>
+								<span class="section-1__num-label">04</span>
 								<span class="section-1__desc-text">Всегда в наличии <br> все размеры футболок</span>
 							</div>
 						</div>
@@ -154,6 +158,116 @@
 			</div>
 		</section>
 
+		<div class="main-layout">
+			<span class="shiled shiled--left">Tidy print</span>
+		</div>
+
+		<section class="cover section section-2">
+			<div class="main-layout">
+				<h2 class="section__title section__title--h2">
+					Почему люди выбирают cервис TIDY PRINT
+				</h2>
+				<h3 class="section__title section__title--h3">Что мы делаем?</h3>
+				<div class="section-2__content">
+					<div class="section-2__docket">
+						<div aria-haspopup="true" class="section-2__docket-item">
+							<span class="section-2__num-label">01</span>
+							<div class="l-icon">
+								<i class="cover section-2__icon section-2__icon--roller"></i>
+							</div>
+							<div class="section-2__docket-content">
+								<div class="section-2__docket-title">
+									Переносим рисунок <br> методом прямой печати
+								</div>
+								<div class="section-2__docket-desc">
+									Благодаря этому принт не ощущается на ощупь и не приносит дискомфорта при ношении.
+								</div>
+							</div>
+						</div>
+						<div aria-haspopup="true" class="section-2__docket-item">
+							<span class="section-2__num-label">02</span>
+							<div class="l-icon">
+								<i class="cover section-2__icon section-2__icon--paint"></i>
+							</div>
+							<div class="section-2__docket-content">
+								<div class="section-2__docket-title">
+									Используем краски <br> фирмы DuPont
+								</div>
+								<div class="section-2__docket-desc">
+									При печати мы используем специальные краски фирмы DuPont, что позволяет создавать рисунки с яркими и насыщенными цветами. Рисунок долговечен и хорошо переносит стирку.
+								</div>
+							</div>
+						</div>
+						<div aria-haspopup="true" class="section-2__docket-item">
+							<span class="section-2__num-label">03</span>
+							<div class="l-icon">
+								<i class="cover section-2__icon section-2__icon--cotton"></i>
+							</div>
+							<div class="section-2__docket-content">
+								<div class="section-2__docket-title">
+									Футболки высокого качества <br> из 100%-ого хлопка
+								</div>
+								<div class="section-2__docket-desc">
+									Для печати мы используем футболки только из настоящего хлопка. Никакой синтетики!
+								</div>
+							</div>
+						</div>
+						<div aria-haspopup="true" class="section-2__docket-item">
+							<span class="section-2__num-label">04</span>
+							<div class="l-icon">
+								<i class="cover section-2__icon section-2__icon--t-shirts"></i>
+							</div>
+							<div class="section-2__docket-content">
+								<div class="section-2__docket-title">
+									Можем напечатать на ваших <br> футболках, или закажите их <br> у нас
+								</div>
+								<div class="section-2__docket-desc">
+									Мы можем нанести изображения на ваши футболки или вы можете приобрести их у нас.
+								</div>
+							</div>
+						</div>
+						<div aria-haspopup="true" class="section-2__docket-item">
+							<span class="section-2__num-label">05</span>
+							<div class="l-icon">
+								<i class="cover section-2__icon section-2__icon--ruler"></i>
+							</div>
+							<div class="section-2__docket-content">
+								<div class="section-2__docket-title">
+									В наличии футболки всех <br> размеров и цветов
+								</div>
+								<div class="section-2__docket-desc">
+									У нас всегда в наличии футболки всех размеров и цветов. Поэтому вам не нужно делать предзаказ, мы приступим к выполнению заказа сразу после обращения.
+								</div>
+							</div>
+						</div>
+						<div aria-haspopup="true" class="section-2__docket-item">
+							<span class="section-2__num-label">06</span>
+							<div class="l-icon">
+								<i class="cover section-2__icon section-2__icon--silk"></i>
+							</div>
+							<div class="section-2__docket-content">
+								<div class="section-2__docket-title">
+									Шелкография и термотрансфер <br> (флекс) для крупных тиражей
+								</div>
+								<div class="section-2__docket-desc">
+									Самые современные технологии печати позволяют полностью реализовать любой оптовый заказ в срок.
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<div class="main-layout">
+			<span class="shiled shiled--right">Tidy print</span>
+		</div>
+
+		<section class="cover section section-3">
+			<div class="main-layout">
+
+			</div>
+		</section>
 	</div>
 
 	<script src="bower_components/jquery/dist/jquery.min.js"></script>

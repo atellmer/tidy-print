@@ -90,6 +90,7 @@
   -ms-flex-align: center;
   -webkit-align-items: center;
   align-items: center;
+  margin: 0;
 }
 @media all and (max-width: 640px) {
   .likearts-content .panel__contacts {

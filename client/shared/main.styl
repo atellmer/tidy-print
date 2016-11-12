@@ -32,6 +32,7 @@ html, body
 	margin 0
 
 .likearts-content .main-layout
+	position relative
 	max-width $container-width
 	margin 0 auto
 	@media all and (max-width: 1250px)
@@ -42,7 +43,7 @@ html, body
 		position relative
 		z-index 10
 		&--h1
-			margin 0
+			margin 0 0 50px 0
 			color #fff
 			font-weight 300
 			font-size 4.3rem
@@ -52,3 +53,58 @@ html, body
 				font-size 3.3rem
 			@media all and (max-width: $tablet)
 				font-size 2.3rem
+		&--h2
+			margin 0 0 26px 0
+			text-align center
+			font-weight 900
+			font-size 3.6rem
+			@media all and (max-width: 992px)
+				font-size 2.3rem
+			@media all and (max-width: $tablet)
+				font-size 1.8rem
+
+		&--h3
+			margin 0 0 51px 0
+			text-align center
+			font-weight 500
+			font-size 1.6rem
+			@media all and (max-width: $tablet)
+				font-size 1.3rem
+			&:before
+				content ''
+				position absolute
+				top 50%
+				transform translate(calc(-100% - 10px), -50%)
+				width 20px
+				height 2px
+				background-color $primary-color
+			&:after
+				content ''
+				position absolute
+				top 50%
+				transform translate(calc(100% - 10px), -50%)
+				width 20px
+				height 2px
+				background-color $primary-color
+
+
+.likearts-content .shiled
+	position absolute
+	z-index 0
+	display inline-block
+	text-transform uppercase
+	color #fff
+	text-shadow 0 0 50px rgba(0, 0, 0, 0.05)
+	font-weight 900
+	font-size 10.26rem
+	transform rotate(-90deg)
+	user-select none
+	@media all and (max-width: 1440px)
+		display none
+	&--left
+		left -293px
+		margin-top 278px
+	&--right
+		right -300px
+		margin-top -270px
+
