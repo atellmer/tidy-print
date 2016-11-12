@@ -42,6 +42,11 @@ body {
     padding: 0 15px;
   }
 }
+@media all and (max-width: 640px) {
+  .likearts-content .main-layout--phone {
+    padding: 0;
+  }
+}
 .likearts-content .section__title {
   position: relative;
   z-index: 10;
