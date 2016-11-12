@@ -4,7 +4,10 @@ var gulp = require('gulp');
 var stylus = require('gulp-stylus');
 var nib = require('nib');
 var connect = require('gulp-connect');
+var rev = require('gulp-rev-append');
 var spritesmith = require('gulp.spritesmith');
+var tinypng = require('gulp-tinypng');
+var clc = require('cli-color');
 var config = require('./config');
 var path = {
 	root: config.root,
@@ -13,9 +16,9 @@ var path = {
 	images: config.root + '/images/',
 };
 
-console.log('----------------------------');
-console.log('mode: ', config.mode);
-console.log('----------------------------');
+console.log(clc.green('-------------------------------------------'));
+console.log(clc.green('Mode: ') + clc.yellow(config.mode));
+console.log(clc.green('-------------------------------------------'));
 
 //connect
 gulp.task('connect', function () {
@@ -63,6 +66,24 @@ gulp.task('sprite', function () {
 		.pipe(gulp.dest(path.images + 'icons/sprite/'));
 });
 
+//hash
+gulp.task('hash', function () {
+	return gulp.src([path.root + '**/*.html'])
+		.pipe(rev())
+		.pipe(gulp.dest(function (file) {
+			return file.base;
+		}));
+});
+
+//img-compress
+gulp.task('img-compress', function () {
+	return gulp.src([path.images + '**/*.{jpg,jpeg,png}'])
+		.pipe(tinypng(config.tinyPngApiKey))
+		.pipe(gulp.dest(function (file) {
+			return file.base;
+		}));
+});
+
 //watch
 gulp.task('watch', function () {
 	gulp.watch([
@@ -80,5 +101,6 @@ gulp.task('default', [
 	'connect',
 	'styl',
 	'sprite',
+	'hash',
 	'watch'
 ]);
