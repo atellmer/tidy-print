@@ -8,3 +8,102 @@
 	background-image url('../../images/bg/2.png')
 	z-index 1
 	margin-top -450px
+
+	&__shift
+		padding-top 510px
+
+	&__title
+		text-align left
+		color #fff
+		@media all and (max-width: $tablet)
+			text-align center
+		&--h2
+			margin 0 0 23px 0
+			font-size 3.4rem
+			max-width 545px
+			span 
+				font-weight 900
+			@media all and (max-width: 992px)
+				font-size 2.3rem
+			@media all and (max-width: $tablet)
+				font-size 1.8rem
+				max-width none
+
+	&__content
+		position relative
+		top -50px
+		display flex
+		flex-flow row wrap
+		justify-content flex-start
+		align-items center
+		@media all and (max-width: 1200px)
+			top 0
+		@media all and (max-width: $tablet)
+			justify-content center
+
+	&__conditions
+		width 100%
+		max-width 468px
+		margin-right 20px
+
+	&__conditions-title
+		display flex
+		flex-flow row wrap
+		justify-content flex-start 
+		align-items center
+		padding 22px 0
+		border-top 1px solid #5b5c60
+		border-bottom 1px solid #5b5c60
+		font-size 2rem
+		font-weight 300
+		color #fff
+		@media all and (max-width: $tablet)
+			font-size 1.6rem
+
+	&__conditions-icon
+		@media all and (max-width: $phone)
+			display none
+
+	&__conditions-desc
+		margin-left 20px
+		span 
+			font-weight 900
+
+	&__list
+		margin 37px 0 0 0
+		padding 0
+		list-style none
+		color #fff
+		font-weight 300
+		font-size 1.8rem
+		@media all and (max-width: $phone)
+			font-size 1.4rem
+
+	&__list-item
+		margin-bottom 25px
+
+	&__flex-wrap
+		display flex
+		align-items flex-start
+
+	&__text
+		margin-left 19px
+
+	&__text-exuding
+			color $primary-color
+			font-weight 700
+
+	.l-form
+		flex-grow 1
+		position relative
+		top -100px
+		margin 0 0 0 54px
+		@media all and (max-width: 992px)
+			top 0
+			margin 0
+
+	.l-print-btn
+		width 100%
+		max-width 288px
+
+
