@@ -1,0 +1,111 @@
+.likearts-content .slick-prev,
+.likearts-content .slick-next {
+  font-size: 0;
+  line-height: 0;
+  position: absolute;
+  top: 50%;
+  display: block;
+  width: 50px;
+  height: 50px;
+  padding: 0;
+  -webkit-transform: translate(0, -50%);
+  -ms-transform: translate(0, -50%);
+  -webkit-transform: translate(0, -50%);
+  -moz-transform: translate(0, -50%);
+  -o-transform: translate(0, -50%);
+  -ms-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background-color: #212121;
+  border-radius: 50%;
+  -webkit-transition: background-color 0.2s ease-in-out;
+  -moz-transition: background-color 0.2s ease-in-out;
+  -o-transition: background-color 0.2s ease-in-out;
+  -ms-transition: background-color 0.2s ease-in-out;
+  transition: background-color 0.2s ease-in-out;
+}
+@media screen and (max-width: 768px) {
+  .likearts-content .slick-prev,
+  .likearts-content .slick-next {
+    width: 40px;
+  }
+}
+.likearts-content .slick-prev:hover,
+.likearts-content .slick-next:hover {
+  background-color: #1ecef4;
+}
+.likearts-content .slick-prev::hover,
+.likearts-content .slick-prev::focus,
+.likearts-content .slick-next::hover,
+.likearts-content .slick-next::focus {
+  outline: none;
+}
+.likearts-content .slick-prevhover::before,
+.likearts-content .slick-prevfocus::before,
+.likearts-content .slick-nexthover::before,
+.likearts-content .slick-nextfocus::before {
+  opacity: 1;
+  -ms-filter: none;
+  filter: none;
+}
+.likearts-content .slick-prev.slick-disabled::before,
+.likearts-content .slick-next.slick-disabled::before {
+  opacity: 0.25;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=25)";
+  filter: alpha(opacity=25);
+}
+.likearts-content .slick-prev::before,
+.likearts-content .slick-next::before {
+  font-size: 3rem;
+  color: #fff;
+}
+.likearts-content .slick-prev {
+  left: -100px;
+}
+@media screen and (max-width: 1400px) {
+  .likearts-content .slick-prev {
+    display: none !important;
+  }
+}
+.likearts-content .slick-prev::before {
+  content: '‹';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -55%);
+  -moz-transform: translate(-50%, -55%);
+  -o-transform: translate(-50%, -55%);
+  -ms-transform: translate(-50%, -55%);
+  transform: translate(-50%, -55%);
+}
+[dir='rtl'] .slick-prev::before {
+  content: '‹';
+}
+.likearts-content .slick-next {
+  right: -100px;
+}
+@media screen and (max-width: 1400px) {
+  .likearts-content .slick-next {
+    display: none !important;
+  }
+}
+.likearts-content .slick-next::before {
+  content: '›';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-40%, -55%);
+  -moz-transform: translate(-40%, -55%);
+  -o-transform: translate(-40%, -55%);
+  -ms-transform: translate(-40%, -55%);
+  transform: translate(-40%, -55%);
+}
+[dir='rtl'] .slick-next::before {
+  content: '›';
+}
+.slick-slide,
+.slick-slide * {
+  outline: none !important;
+}

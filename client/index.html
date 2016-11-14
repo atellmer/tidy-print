@@ -8,6 +8,7 @@
 		content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,minimal-ui">
 	<title>Tidy Print</title>
 	<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+	<link rel="stylesheet" href="bower_components/slick-carousel/slick/slick.css">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 	<link rel="stylesheet" href="fonts/fonts.css?rev=ec525ff974c6d7d732de7ce5eaf87992">
 	<link rel="stylesheet" href="images/icons/sprite/sprite.css?rev=d3e69c5e7f161f9b51861b52e60989e2">
@@ -19,11 +20,12 @@
 	<link rel="stylesheet" href="components/logo/logo.component.css?rev=b179971ba59cde2c9ddb8f49e7f565dc">
 	<link rel="stylesheet" href="components/button/button.component.css?rev=cd2695b79b3dbb7a8cef3d9430e2a362">
 	<link rel="stylesheet" href="components/form/form.component.css?rev=4fc180d6e7df575a6d2e5e8ecb998dcd">
+	<link rel="stylesheet" href="components/carousel/carousel.component.css?rev=8d4bc36e9904fa0407b19efcf48b2b2a">
 	<link rel="stylesheet" href="components/section-1/section-1.component.css?rev=0d4ff9f29c37268179d0601e91b615d0">
 	<link rel="stylesheet" href="components/section-2/section-2.component.css?rev=bb0f7f1ba09e886b0c6603139083b295">
 	<link rel="stylesheet" href="components/section-3/section-3.component.css?rev=f263404096f7f918fa81fba8812c8ef7">
 	<link rel="stylesheet" href="components/section-4/section-4.component.css?rev=1ad725f088af2ae5486ab20d26e9fc52">
-	<link rel="stylesheet" href="components/section-5/section-5.component.css?rev=b39c85da699f82a77d2207177b29c40a">
+	<link rel="stylesheet" href="components/section-5/section-5.component.css?rev=f1dd2d2a9426058274f677da411774b7">
 	<!--?rev=@@hash-->
 </head>
 
@@ -425,17 +427,50 @@
 		</section>
 
 		<section class="cover section section-5">
-			<div class="main-layout">
-				fff
+			<div class="section-5__shift">
+				<div class="main-layout">
+					<h2 class="section__title section__title--h2">
+					За 5 лет работы мы напечатали уже 12760 футболок.
+					</h2>
+					<h3 class="section__title section__title--h3">Посмотрите на наши работы</h3>
+					<div class="section-5__content">
+						<div class="l-carousel">
+							<div data-print-carousel class="print-carousel">
+								<div class="print-carousel__item">
+									<img src="./images/carousel/1.jpg" alt="alt-text" class="img-responsive">
+								</div>
+								<div class="print-carousel__item">
+									<img src="./images/carousel/2.jpg" alt="alt-text" class="img-responsive">
+								</div>
+								<div class="print-carousel__item">
+									<img src="./images/carousel/3.jpg" alt="alt-text" class="img-responsive">
+								</div>
+								<div class="print-carousel__item">
+									<img src="./images/carousel/1.jpg" alt="alt-text" class="img-responsive">
+								</div>
+								<div class="print-carousel__item">
+									<img src="./images/carousel/2.jpg" alt="alt-text" class="img-responsive">
+								</div>
+								<div class="print-carousel__item">
+									<img src="./images/carousel/3.jpg" alt="alt-text" class="img-responsive">
+								</div>
+							</div>
+						</div>
+						<div class="l-btn">
+							<button class="print-btn">Оставить заявку на печать</button>
+						</div>
+					</div>
+				</div>
 			</div>
 		</section>
 
 	</div>
 
 	<script src="bower_components/jquery/dist/jquery.min.js"></script>
-	<script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
 	<script src="bower_components/hammerjs/hammer.min.js"></script>
+	<script src="bower_components/slick-carousel/slick/slick.min.js"></script>
 	<script src="components/menu/menu.component.js?rev=2c795aac14714ddc87357546c5bb6804"></script>
+	<script src="components/carousel/carousel.component.js?rev=d0fb58f963a8f312a33f853b224827ea"></script>
 </body>
 
 </html>

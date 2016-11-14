@@ -4,7 +4,21 @@
 	position relative
 	width 100%
 	height auto
-	min-height 1518px
+	min-height 1400px
 	background-image url('../../images/bg/3.png')
 	z-index 1
 	margin-top -480px
+	@media all and (max-width: 992px)
+		min-height 0
+
+	&__shift
+		padding-top 510px
+		@media all and (max-width: 992px)
+			padding-top 470px
+
+
+	.l-btn
+		margin 53px 0
+		display flex
+		justify-content center
+		align-items center
