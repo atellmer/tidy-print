@@ -123,6 +123,9 @@ body {
   height: 2px;
   background-color: #1ecef4;
 }
+.likearts-content .section__title--margin-b-40 {
+  margin: 0 0 40px 0;
+}
 .likearts-content .shiled {
   position: absolute;
   z-index: 0;
