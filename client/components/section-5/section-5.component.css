@@ -20,6 +20,9 @@
     padding-top: 470px;
   }
 }
+.likearts-content .section-5__content {
+  position: relative;
+}
 .likearts-content .section-5 .l-btn {
   margin: 53px 0;
   display: -webkit-box;
