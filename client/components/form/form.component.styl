@@ -1,90 +1,129 @@
 @import '../../shared/variables.styl'
 
 .likearts-content .print-form
-	display flex
-	flex-flow column wrap
-	justify-content center
-	align-items center
-	width 524px
-	height 524px
-	border 5px solid #fff
-	border-radius 50%
+	width 100%
+	height auto
 	margin 0
-	padding 20px
-	@media all and (max-width: 1200px)
-		width 424px
-		height 424px
-	@media all and (max-width: 1020px)
-		width 100%
-		height auto
-		border 0
 
+	&__flex-wrap
+		display flex
+		flex-flow row wrap
+		justify-content space-between
+		align-items stretch
+		margin-bottom 25px
+		@media all and (max-width: $phone)
+			margin-bottom 0
 
-	&__title
-		text-align center
-		color #fff
-		font-size 1.7rem
-		font-weight 300
-		margin 0 0 37px 0
-		@media all and (max-width: 1200px)
-			margin 0 0 10px 0
-		@media all and (max-width: $tablet)
-			font-size 1.5rem
+	&__btn
+		display flex
+		justify-content center
+		align-items center
+		background-color #424242
+		font-size 1.6rem
+		font-weight 100
+		&:hover
+			box-shadow none
+		@media all and (max-width: $phone)
+			padding 10px
 
-		span
-			font-size 2.4rem
-			font-weight 900
-			@media all and (max-width: $tablet)
-				font-size 2rem
-				margin 0 0 20px 0
+	&__btn-icon
+		margin-right 15px
 	
 	&__input-wrap
 		position relative
 		width 100%
-		max-width 288px
-		margin 0 0 20px 0
-		@media all and (max-width: 1200px)
-			margin 0 0 10px 0
+		max-width 370px
+		margin-bottom 30px
+		@media all and (max-width: 992px)
+			margin-bottom 10px
+			max-width none
+
+	&__group
+		width 50%
+		@media all and (max-width: 992px)
+			width 100%
 
 	&__input
 		display block
 		width 100%
-		border 1px solid #fff
 		background-color transparent
+		border 1px solid #e1e1e1
 		border-radius 50px
 		padding 20px 50px 20px 24px
-		color #fff
 		font-size 1.6rem
 		font-weight 100
 		margin 0 auto
 		transition all .2s ease-in-out
-		@media all and (max-width: 992px)
-			box-shadow 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.12)
+		@media all and (max-width: $phone)
+			padding 10px
 
 		&:focus
 			outline none
 			background-color #fff
 			color #000
-			border 1px solid $primary-color
-			box-shadow 0 3px 10px rgba(30, 206, 244, 0.16), 0 3px 10px rgba(30, 206, 244, 0.23)
+			border 1px solid transparent
+			box-shadow 0 0 30px rgba(30, 206, 244, 0.5)
+
+		&::-webkit-input-placeholder
+			font-weight 100
+			color #2c2c2c
+
+		&::-moz-placeholder
+			font-weight 100
+			color #2c2c2c
+
+		&:-moz-placeholder
+			font-weight 100
+			color #2c2c2c
+
+		&:-ms-input-placeholder
+			font-weight 100
+			color #2c2c2c
+
+	&__textarea
+		color red
+		resize none
+		min-height 160px
+		border-radius 30px 
+		text-align left
+		@media all and (max-width: 992px)
+			min-height 140px
+		@media all and (max-width: $phone)
+			min-height 80px
 
 	&__input-icon
 		position absolute
 		display inline-block
-		top 50%
+		top 0
 		right 0
-		transform translate(-100%, -50%)
+		transform translate(-100%, 100%)
 		width 21px
 		height 21px
+		@media all and (max-width: $phone)
+			transform translate(-100%, 50%)
 
 		&--user
-			background-image url('../../images/icons/user--w.png')
+			background-image url('../../images/icons/form/user.png')
 
 		&--phone
-			background-image url('../../images/icons/phone--w.png')
+			background-image url('../../images/icons/form/phone.png')
+
+		&--letter
+			background-image url('../../images/icons/form/letter.png')
+
+		&--textarea
+			background-image url('../../images/icons/form/textarea.png')
 
 	.print-form__input--user:focus + .print-form__input-icon--user
-		background-image url('../../images/icons/user.png')
+		background-image url('../../images/icons/form/user--b.png')
 
 	.print-form__input--phone:focus + .print-form__input-icon--phone
-		background-image url('../../images/icons/phone.png')
+		background-image url('../../images/icons/form/phone--b.png')
+
+	.print-form__input--letter:focus + .print-form__input-icon--letter
+		background-image url('../../images/icons/form/letter--b.png')
+
+	.print-form__input--textarea:focus + .print-form__input-icon--textarea
+		background-image url('../../images/icons/form/textarea--b.png')
+
+

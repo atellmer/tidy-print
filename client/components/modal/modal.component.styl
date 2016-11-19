@@ -1,0 +1,94 @@
+@import '../../shared/variables.styl'
+
+
+.likearts-content .modals
+	position relative
+
+	&__overlay
+		display none
+		visibility hidden
+		position fixed
+		top 0
+		left 0
+		width 100%
+		height 100%
+		background-color rgba(0, 0, 0, 0.7)
+		z-index 10001
+		cursor pointer
+
+.likearts-content .print-modal
+	display none
+	visibility hidden
+	position fixed
+	top 50%
+	left 50%
+	transform translate(-50%, -50%)
+	width 970px
+	max-width 100%
+	height auto
+	background-color #fff
+	padding 52px 100px
+	z-index 10001
+	perspective 150px
+	@media all and (max-width: 992px)
+		width calc(100% - 100px)
+		padding 50px
+	@media all and (max-width: 480px)
+		width calc(100% - 40px)
+		max-height calc(100vh - 40px)
+		padding 10px
+		overflow auto
+
+	&__close-btn
+		position absolute
+		top 0
+		right 0
+		transform translate(100%, -100%)
+		width 40px
+		height 40px
+		border 1px solid #fff
+		cursor pointer
+		user-select none
+		@media all and (max-width: $phone)
+			transform translate(0, -100%)
+
+	&__icon
+		position absolute
+		top 50%
+		left 50%
+		transform translate(-50%, -50%)
+		color #fff
+
+	&__header
+		font-weight 900
+		font-size 3rem
+		text-align center
+		margin-bottom 55px
+		@media all and (max-width: 992px)
+			font-size 2.4rem
+			margin-bottom 20px
+		@media all and (max-width: $phone)
+			font-size 1.8rem
+			margin-bottom 10px
+
+	.l-print-btn
+		display flex
+		justify-content center
+		.print-btn
+			max-width 369px
+
+.likearts-content .js-is-open
+	display block
+	animation modal-motion .6s 1 ease-in-out
+	animation-fill-mode forwards
+
+@keyframes modal-motion {
+	0% {
+		visibility visible
+		opacity 0
+	}
+	100% {
+		visibility visible
+		opacity 1
+	}
+}

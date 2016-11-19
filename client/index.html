@@ -11,23 +11,24 @@
 	<link rel="stylesheet" href="bower_components/slick-carousel/slick/slick.css">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 	<link rel="stylesheet" href="fonts/fonts.css?rev=ec525ff974c6d7d732de7ce5eaf87992">
-	<link rel="stylesheet" href="images/icons/sprite/sprite.css?rev=d3e69c5e7f161f9b51861b52e60989e2">
-	<link rel="stylesheet" href="shared/helpers.css?rev=81556df2d46d74b020715a07b6f891a9">
-	<link rel="stylesheet" href="shared/main.css?rev=691d087b888a7486527cbc01326e468d">
+	<link rel="stylesheet" href="images/icons/sprite/sprite.css?rev=1eeb0520c89d7cbafd8b793dd02b3892">
+	<link rel="stylesheet" href="shared/helpers.css?rev=0625abed9451055be9e4098c54dd061a">
+	<link rel="stylesheet" href="shared/main.css?rev=11549d7d13935e13a70875884bd7d9ff">
 	<link rel="stylesheet" href="components/header/header.component.css?rev=d41d8cd98f00b204e9800998ecf8427e">
 	<link rel="stylesheet" href="components/menu/menu.component.css?rev=5085e09541ba875d798793a3e16b9e10">
 	<link rel="stylesheet" href="components/panel/panel.component.css?rev=a42b06e994545f490df6f995a5e28798">
 	<link rel="stylesheet" href="components/logo/logo.component.css?rev=b179971ba59cde2c9ddb8f49e7f565dc">
-	<link rel="stylesheet" href="components/button/button.component.css?rev=5a2b3ebc24577630948eb97fc785e4ed">
-	<link rel="stylesheet" href="components/form/form.component.css?rev=4fc180d6e7df575a6d2e5e8ecb998dcd">
+	<link rel="stylesheet" href="components/button/button.component.css?rev=197d9534cda659529823658754779389">
+	<link rel="stylesheet" href="components/form/form.component.css?rev=03d1baadd030a39bc991ec0150a0167a">
 	<link rel="stylesheet" href="components/carousel/carousel.component.css?rev=20a38537d6e008d818723b0ff32f1105">
+	<link rel="stylesheet" href="components/modal/modal.component.css?rev=b01eabdd9188f2b82071d6331ac8ad78">
 	<link rel="stylesheet" href="components/section-1/section-1.component.css?rev=14079139be20f9d91d107a3e9759cff0">
 	<link rel="stylesheet" href="components/section-2/section-2.component.css?rev=bb0f7f1ba09e886b0c6603139083b295">
 	<link rel="stylesheet" href="components/section-3/section-3.component.css?rev=f263404096f7f918fa81fba8812c8ef7">
 	<link rel="stylesheet" href="components/section-4/section-4.component.css?rev=9c0b4f67ac79e9790e2a0f2166b624d6">
 	<link rel="stylesheet" href="components/section-5/section-5.component.css?rev=0383ba62469399dd3b45f64e149b17a4">
 	<link rel="stylesheet" href="components/section-6/section-6.component.css?rev=cdeb6cfd54f1303753b63168f1d34b38">
-	<link rel="stylesheet" href="components/section-7/section-7.component.css?rev=d41d8cd98f00b204e9800998ecf8427e">
+	<link rel="stylesheet" href="components/section-7/section-7.component.css?rev=0b8786bf9849c3220772a933839e1a61">
 	<!--?rev=@@hash-->
 </head>
 
@@ -156,7 +157,7 @@
 							</div>
 						</div>
 						<div class="l-btn">
-							<button class="print-btn"> Отправить заявку на расчет цены</button>
+							<button class="print-btn" data-modal-trigger="0"> Отправить заявку на расчет цены</button>
 						</div>
 					</div>
 					<div class="l-image">
@@ -322,24 +323,7 @@
 								</li>
 							</ul>
 						</div>
-						<div class="l-form">
-							<form class="print-form">
-								<div class="print-form__title">
-									<span>Заполните форму</span> <br> чтобы получить прайс-лист для <br> оптовых клиентов
-								</div>
-								<div class="print-form__input-wrap">
-									<input type="text" name="user" placeholder="ФИО" class="print-form__input print-form__input--user">
-									<i class="cover print-form__input-icon print-form__input-icon--user"></i>
-								</div>
-								<div class="print-form__input-wrap">
-									<input type="text" name="phone" placeholder="Телефон" class="print-form__input print-form__input--phone">
-									<i class="cover print-form__input-icon print-form__input-icon--phone"></i>
-								</div>
-								<div class="l-print-btn">
-									<button type="submit" class="print-btn print-btn--max">Получить прайс-лист</button>
-								</div>
-							</form>
-						</div>
+						<div class="l-form"></div>
 					</div>
 				</div>
 			</div>
@@ -542,30 +526,93 @@
 		</section>
 
 		<div class="panel no-padding">
-				<div class="main-layout">
-					<div class="panel__content">
-						<div class="l-logo">
-							<a href="#">
-								<div class="logo">
-									<span class="logo__area logo__area--blue logo__area--rounded">Tidy</span>
-									<span class="logo__area">Print</span>
-									<span class="logo__text">Лучший сервис <br> печати на футболках</span>
-								</div>
-							</a>
-						</div>
-						<address class="panel__contacts">
-							<span class="panel__contacts-phone">
-								<i class="icon icon-phone--w panel__contacts-icon"></i>
-							</span>
-							<span class="panel__text-group">
-								<span class="panel__text panel__text--phone">8(800)60-07-45</span>
-								<br>
-								<span class="panel__text">Спб, м. Московская, ул. Пушкина д. 63</span>
-							</span>
-						</address>
+			<div class="main-layout">
+				<div class="panel__content">
+					<div class="l-logo">
+						<a href="#">
+							<div class="logo">
+								<span class="logo__area logo__area--blue logo__area--rounded">Tidy</span>
+								<span class="logo__area">Print</span>
+								<span class="logo__text">Лучший сервис <br> печати на футболках</span>
+							</div>
+						</a>
 					</div>
+					<address class="panel__contacts">
+						<span class="panel__contacts-phone">
+							<i class="icon icon-phone--w panel__contacts-icon"></i>
+						</span>
+						<span class="panel__text-group">
+							<span class="panel__text panel__text--phone">8(800)60-07-45</span>
+							<br>
+							<span class="panel__text">Спб, м. Московская, ул. Пушкина д. 63</span>
+						</span>
+					</address>
 				</div>
 			</div>
+		</div>
+
+		<div class="modals">
+			<div class="modals__overlay"></div>
+			<div class="print-modal" data-modal-target="0">
+				<div data-modal-close class="print-modal__close-btn">
+					<i class="material-icons print-modal__icon">clear</i>
+				</div>
+				<div class="print-modal__header">
+					Отправить заявку на расчет цены
+				</div>
+				<div class="print-modal__body">
+					<form class="print-form">
+						<div class="print-form__flex-wrap">
+							<div class="print-form__group">
+								<div class="print-form__input-wrap">
+									<input type="text"
+										name="user"
+										placeholder="Как вас зовут?"
+										class="print-form__input print-form__input--user">
+									<i class="cover print-form__input-icon print-form__input-icon--user"></i>
+								</div>
+								<div class="print-form__input-wrap">
+									<input type="text"
+										name="phone"
+										placeholder="Телефон"
+										class="print-form__input print-form__input--phone">
+									<i class="cover print-form__input-icon print-form__input-icon--phone"></i>
+								</div>
+								<div class="print-form__input-wrap">
+									<input type="email"
+										name="email"
+										placeholder="E-mail"
+										class="print-form__input print-form__input--letter">
+									<i class="cover print-form__input-icon print-form__input-icon--letter"></i>
+								</div>
+							</div>
+							<div class="print-form__group">
+								<div class="print-form__input-wrap">
+									<button type="button"
+										id="upload-trigger"
+										class="print-btn print-btn--max print-form__btn">
+										<i class="icon icon-upload--w print-form__btn-icon"></i>
+										Прикрепить файл
+									</button>
+									<span class="hidden">
+										<input type="file" id="upload-target" name="upload">
+									</span>
+								</div>
+								<div class="print-form__input-wrap">
+									<textarea name="comment"
+										placeholder="Ваш комментарий"
+										class="print-form__input print-form__input--textarea print-form__textarea"></textarea>
+									<i class="cover print-form__input-icon print-form__input-icon--textarea"></i>
+								</div>
+							</div>
+						</div>
+						<div class="l-print-btn">
+							<button type="submit" class="print-btn print-btn--max">Рассчитать цену сейчас</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
 
 	</div>
 
@@ -574,6 +621,8 @@
 	<script src="bower_components/slick-carousel/slick/slick.min.js"></script>
 	<script src="components/menu/menu.component.js?rev=2c795aac14714ddc87357546c5bb6804"></script>
 	<script src="components/carousel/carousel.component.js?rev=f24007b75edf5a6f14a5118808558473"></script>
+	<script src="components/modal/modal.component.js?rev=c5cd3915a6f47cc7b70903948be121b1"></script>
+	<script src="components/form/form.component.js?rev=aa3662cae068dac5b8ebb64f01eed049"></script>
 </body>
 
 </html>

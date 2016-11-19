@@ -161,3 +161,6 @@ body {
   right: -300px;
   margin-top: -270px;
 }
+.likearts-content .hidden {
+  display: none;
+}
