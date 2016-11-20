@@ -44,3 +44,13 @@
 
 .transition
 	transition all .2s ease-in-out
+
+.phone-visible
+	display block
+	@media all and (min-width: $phone)
+		display none
+
+.not-phone-visible
+	display none
+	@media all and (min-width: $phone)
+		display block

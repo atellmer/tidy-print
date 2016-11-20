@@ -147,6 +147,7 @@ body {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+  cursor: default;
 }
 @media all and (max-width: 1440px) {
   .likearts-content .shiled {
@@ -160,6 +161,24 @@ body {
 .likearts-content .shiled--right {
   right: -300px;
   margin-top: -270px;
+}
+.likearts-content .shiled--horizontal-left {
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  transform: rotate(0deg);
+  left: -136px;
+  margin-top: 18px;
+}
+.likearts-content .shiled--horizontal-right {
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  transform: rotate(0deg);
+  right: -102px;
+  margin-top: -57px;
 }
 .likearts-content .hidden {
   display: none;

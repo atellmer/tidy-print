@@ -1,69 +1,26 @@
 @import '../../shared/variables.styl'
 
-
 .likearts-content .section-6
 	position relative
 	width 100%
 	height auto
-	z-index 1
-	margin-top -130px
-	padding-bottom 59px
+	min-height 1400px
+	background-image url('../../images/section-6/bg/section-6.png')
+	z-index 50
+	margin-top -480px
 	@media all and (max-width: 992px)
-		margin-top 0
+		min-height 0
+
+	&__shift
+		padding-top 510px
+		@media all and (max-width: 992px)
+			padding-top 470px
 
 	&__content
 		position relative
 
-	&__cards
-		display flex
-		flex-flow row wrap
-		justify-content space-between
-		align-items stretch
-
-	&__card
-		position relative
-		width calc(25% - 2px)
-		height auto
-		background-color #fff
-		margin 1px 1px
-		transition background-color .2s ease-in-out
-		@media all and (max-width: 992px)
-			width calc(50% - 2px)
-		&:hover
-			background-color $primary-color
-			.section-6__card-cover:after
-				background-color $primary-color
-
-	&__card-cover
-		position relative
-		width 100%
-		height 300px
-
-		&:after
-			content ''
-			position absolute
-			width 100%
-			height 300px
-			background-color transparent
-			opacity 0.5
-			transition background-color .2s ease-in-out
-
-		&--cups
-			background-image url('../../images/cups.jpg')
-
-		&--mouse-pad
-			background-image url('../../images/mouse-pad.jpg')
-
-		&--phonecase
-			background-image url('../../images/phonecase.jpg')
-
-		&--hoody
-			background-image url('../../images/hoody.jpg')
-
-	&__card-btn-layout
-		margin 27px
+	.l-btn
+		margin 53px 0
 		display flex
 		justify-content center
 		align-items center
-		@media all and (max-width: $phone)
-			margin 27px 15px

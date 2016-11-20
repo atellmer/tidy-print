@@ -3,7 +3,7 @@
   width: 100%;
   height: auto;
   padding: 50px 0 0 0;
-  z-index: 3;
+  z-index: 90;
 }
 .likearts-content .section-2__content {
   position: relative;

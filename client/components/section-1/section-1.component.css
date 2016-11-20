@@ -3,9 +3,9 @@
   width: 100%;
   height: auto;
   min-height: 600px;
-  background-image: url("../../images/bg/1.png");
+  background-image: url("../../images/section-1/bg/section-1.png");
   padding: 50px 0 0 0;
-  z-index: 3;
+  z-index: 100;
 }
 @media all and (max-width: 640px) {
   .likearts-content .section-1 {

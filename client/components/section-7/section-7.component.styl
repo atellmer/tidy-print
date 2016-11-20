@@ -1,64 +1,69 @@
 @import '../../shared/variables.styl'
 
+
 .likearts-content .section-7
 	position relative
 	width 100%
 	height auto
-	background-image url('../../images/bg/4.png')
-	z-index 1
+	z-index 40
+	margin-top -130px
+	padding-bottom 59px
+	@media all and (max-width: 992px)
+		margin-top 0
 
 	&__content
 		position relative
-		width 100%
-		height 675px
+
+	&__cards
 		display flex
 		flex-flow row wrap
-		justify-content flex-end
-		align-items center
-		@media all and (max-width: $tablet)
-			justify-content center
+		justify-content space-between
+		align-items stretch
 
 	&__card
 		position relative
-		width 100%
+		width calc(25% - 2px)
 		height auto
-		max-width 420px
-		background-color $primary-color
-
-	&__address
-		width 100%
 		background-color #fff
-		padding 31px 39px 30px 39px
-		margin 0
+		margin 1px 1px
+		transition background-color .2s ease-in-out
+		@media all and (max-width: 992px)
+			width calc(50% - 2px)
+		&:hover
+			background-color $primary-color
+			.section-6__card-cover:after
+				background-color $primary-color
+
+	&__card-cover
+		position relative
+		width 100%
+		height 300px
+
+		&:after
+			content ''
+			position absolute
+			width 100%
+			height 300px
+			background-color transparent
+			opacity 0.5
+			transition background-color .2s ease-in-out
+
+		&--cups
+			background-image url('../../images/section-7/cups.jpg')
+
+		&--mouse-pad
+			background-image url('../../images/section-7/mouse-pad.jpg')
+
+		&--phonecase
+			background-image url('../../images/section-7/phonecase.jpg')
+
+		&--hoody
+			background-image url('../../images/section-7/hoody.jpg')
 
 	&__card-btn-layout
-		margin 34px 80px
-
-	&__card-title
-		font-size 3rem
-		font-weight 900
-		margin-bottom 30px
-		@media all and (max-width: $tablet)
-			font-size 2rem
-
-	&__address-name
-		color #d3d3d3
-		text-transform uppercase
-		font-size 1.1rem
-		font-weight 500
-		margin-bottom 10px
-
-	&__address-value
-		color #4a4a4a
-		font-size 1.7rem
-		font-weight 500
-		@media all and (max-width: $tablet)
-			font-size 1.4rem
-
-		span
-			color #ccc
-
-	&__address-group
-		margin-bottom 24px
-		&:last-child
-			margin-bottom 0
+		margin 27px
+		display flex
+		justify-content center
+		align-items center
+		@media all and (max-width: $phone)
+			margin 27px 15px

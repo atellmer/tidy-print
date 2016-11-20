@@ -76,3 +76,19 @@
   -ms-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
 }
+.phone-visible {
+  display: block;
+}
+@media all and (min-width: 640px) {
+  .phone-visible {
+    display: none;
+  }
+}
+.not-phone-visible {
+  display: none;
+}
+@media all and (min-width: 640px) {
+  .not-phone-visible {
+    display: block;
+  }
+}

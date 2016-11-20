@@ -109,14 +109,26 @@ html, body
 	font-size 10.26rem
 	transform rotate(-90deg)
 	user-select none
+	cursor default
 	@media all and (max-width: 1440px)
 		display none
+
 	&--left
 		left -293px
 		margin-top 278px
 	&--right
 		right -300px
 		margin-top -270px
+
+	&--horizontal-left
+		transform rotate(0deg)
+		left -136px
+		margin-top 18px
+
+	&--horizontal-right
+		transform rotate(0deg)
+		right -102px
+		margin-top -57px
 
 .likearts-content .hidden
 	display none
