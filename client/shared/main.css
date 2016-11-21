@@ -12,6 +12,7 @@ body {
   -webkit-overflow-scrolling: touch;
   overflow-scrolling: touch;
   color: #181818;
+  overflow-x: hidden;
 }
 .likearts-content a:hover {
   outline: none;

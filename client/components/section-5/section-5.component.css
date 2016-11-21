@@ -57,6 +57,7 @@
   position: relative;
   width: calc(25% - 2px);
   height: auto;
+  min-height: 300px;
   padding: 20px;
   background-color: #fff;
   margin: 1px 1px;
@@ -112,7 +113,7 @@
 }
 @media all and (max-width: 640px) {
   .likearts-content .section-5__docket-item {
-    padding: 10px;
+    padding: 15px;
   }
 }
 .likearts-content .section-5__icon {
@@ -240,7 +241,7 @@
 }
 @media all and (max-width: 768px) {
   .likearts-content .section-5__docket-desc {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
   }
 }
 .likearts-content .section-5 .l-btn {

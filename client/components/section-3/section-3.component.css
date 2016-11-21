@@ -176,6 +176,11 @@
   line-height: 0.7;
   cursor: pointer;
 }
+@media all and (max-width: 768px) {
+  .likearts-content .section-3 .price-block__item {
+    background-color: rgba(0,0,0,0.6);
+  }
+}
 @media all and (max-width: 640px) {
   .likearts-content .section-3 .price-block__item {
     padding: 0 20px;

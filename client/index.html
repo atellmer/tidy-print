@@ -12,7 +12,7 @@
 	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 	<link rel="stylesheet" href="fonts/fonts.css?rev=ec525ff974c6d7d732de7ce5eaf87992">
 	<link rel="stylesheet" href="images/icons/sprite/sprite.css?rev=0323aa0160297afd39f788d3ddd004b3">
-	<link rel="stylesheet" href="shared/helpers.css?rev=a3216b70ba7dc10d0a1aede169a70260">
+	<link rel="stylesheet" href="shared/helpers.css?rev=d41d8cd98f00b204e9800998ecf8427e">
 	<link rel="stylesheet" href="shared/main.css?rev=f63685624ceccdbb371a273574016d50">
 	<link rel="stylesheet" href="components/header/header.component.css?rev=d41d8cd98f00b204e9800998ecf8427e">
 	<link rel="stylesheet" href="components/menu/menu.component.css?rev=5085e09541ba875d798793a3e16b9e10">
@@ -72,7 +72,7 @@
 					<div id="menuBtn" class="menu-mobile__btn">
 						<i id="menuBtnIcon" class="material-icons menu-mobile__icon">menu</i>
 					</div>
-					<ul id="menuContent" class="paper-shadow-z2 menu-mobile__list">
+					<ul id="menuContent" class="menu-mobile__list">
 						<li aria-haspopup="true" class="menu-mobile__list-item">
 							<a href="#" class="menu-mobile__list-link">Главная</a>
 						</li>
@@ -158,7 +158,11 @@
 							</div>
 						</div>
 						<div class="l-btn">
-							<button class="print-btn" data-modal-trigger="0"> Отправить заявку на расчет цены</button>
+							<button class="print-btn"
+								aria-haspopup="true"
+								data-modal-trigger="0"> 
+								Отправить заявку на расчет цены
+							</button>
 						</div>
 					</div>
 					<div class="l-image">
@@ -528,7 +532,11 @@
 						</div>
 					</div>
 					<div class="l-btn">
-						<button class="print-btn print-btn--black">Оставить заявку на печать</button>
+						<button
+							class="print-btn print-btn--black"
+							aria-haspopup="true">
+							Оставить заявку на печать
+						</button>
 					</div>
 				</div>
 			</div>
@@ -565,7 +573,7 @@
 							</div>
 						</div>
 						<div class="l-btn">
-							<button class="print-btn">Оставить заявку на печать</button>
+							<button class="print-btn" aria-haspopup="true">Оставить заявку на печать</button>
 						</div>
 					</div>
 				</div>
@@ -582,25 +590,25 @@
 						<div aria-haspopup="true" class="paper-shadow-z1 section-7__card">
 							<div class="cover section-7__card-cover section-7__card-cover--cups"></div>
 							<div class="section-7__card-btn-layout">
-								<button class="print-btn print-btn--card">Кружки</button>
+								<button class="print-btn print-btn--card" aria-haspopup="true">Кружки</button>
 							</div>
 						</div>
 						<div aria-haspopup="true" class="paper-shadow-z1 section-7__card">
 							<div class="cover section-7__card-cover section-7__card-cover--mouse-pad"></div>
 							<div class="section-7__card-btn-layout">
-								<button class="print-btn print-btn--card">Коврики для мыши</button>
+								<button class="print-btn print-btn--card" aria-haspopup="true">Коврики для мыши</button>
 							</div>
 						</div>
 						<div aria-haspopup="true" class="paper-shadow-z1 section-7__card">
 							<div class="cover section-7__card-cover section-7__card-cover--phonecase"></div>
 							<div class="section-7__card-btn-layout">
-								<button class="print-btn print-btn--card">Чехлы для телефонов</button>
+								<button class="print-btn print-btn--card" aria-haspopup="true">Чехлы для телефонов</button>
 							</div>
 						</div>
 						<div aria-haspopup="true" class="paper-shadow-z1 section-7__card">
 							<div class="cover section-7__card-cover section-7__card-cover--hoody"></div>
 							<div class="section-7__card-btn-layout">
-								<button class="print-btn print-btn--card">Толстовки</button>
+								<button class="print-btn print-btn--card" aria-haspopup="true">Толстовки</button>
 							</div>
 						</div>
 					</div>
@@ -640,7 +648,9 @@
 							</div>
 						</address>
 						<div class="section-8__card-btn-layout">
-							<button class="print-btn print-btn--card print-btn--transparent">Задать вопрос</button>
+							<button
+								class="print-btn print-btn--card print-btn--transparent"
+								aria-haspopup="true">Задать вопрос</button>
 						</div>
 					</div>
 				</div>
@@ -745,7 +755,7 @@
 	<script src="components/carousel/carousel.component.js?rev=7cf4462d59df1cecaac710f2cffe0e14"></script>
 	<script src="components/modal/modal.component.js?rev=c5cd3915a6f47cc7b70903948be121b1"></script>
 	<script src="components/form/form.component.js?rev=aa3662cae068dac5b8ebb64f01eed049"></script>
-	<script src="components/section-3/section-3.component.js?rev=bbee7fb79a7ee96415b2dacf2bf5a461"></script>
+	<script src="components/section-3/section-3.component.js?rev=d8f5c24b0f782d022b95703fab70bad5"></script>
 </body>
 
 </html>

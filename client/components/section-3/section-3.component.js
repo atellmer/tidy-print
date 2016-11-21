@@ -66,11 +66,13 @@
 		}
 
 		function removeClasses(target, classes) {
-			classes.forEach(function(item) {
-				if (target.classList.contains(item)) {
-					target.classList.remove(item);
+			var i;
+
+			for (i = 0; i < classes.length; i++) {
+				if (target.classList.contains(classes[i])) {
+					target.classList.remove(classes[i]);
 				}
-			});
+			}
 		}
 
 		function addClass(target, className) {
