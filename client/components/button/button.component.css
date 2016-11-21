@@ -16,6 +16,7 @@
   -o-transition: all 0.2s ease-in-out;
   -ms-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
+  text-align: center;
 }
 @media all and (max-width: 992px) {
   .likearts-content .print-btn {
