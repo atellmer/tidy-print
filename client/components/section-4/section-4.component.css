@@ -5,7 +5,12 @@
   min-height: 1577px;
   background-image: url("../../images/section-4/bg/section-4.png");
   z-index: 70;
-  margin-top: -840px;
+  margin-top: -760px;
+}
+@media all and (max-width: 768px) {
+  .likearts-content .section-4 {
+    margin-top: -820px;
+  }
 }
 .likearts-content .section-4__shift {
   padding-top: 840px;

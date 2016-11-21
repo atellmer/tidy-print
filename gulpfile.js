@@ -90,7 +90,7 @@ gulp.task('watch', function () {
 		path.root + '/**/*.html'], ['html']);
 	gulp.watch([
 		path.shared + '**/*.styl',
-		path.components + '**/section-4.component.styl'], ['styl']);
+		path.components + '**/*.styl'], ['styl']);
 	gulp.watch([
 		path.components + '**/*.js'], ['js']);
 	gulp.watch([
