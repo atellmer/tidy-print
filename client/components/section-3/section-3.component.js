@@ -27,9 +27,7 @@
 
 			if (!isNaN(id)) {
 
-				if (target.classList.contains('js-is-A3')) {
-						target.classList.remove('js-is-A3');
-				}
+				removeClasses(target, classes);
 
 				switch(id) {
 					case (0): {
