@@ -19,24 +19,18 @@
   -webkit-flex-flow: row wrap;
   -ms-flex-flow: row wrap;
   flex-flow: row wrap;
-  -webkit-box-pack: justify;
-  -moz-box-pack: justify;
-  -o-box-pack: justify;
-  -ms-flex-pack: justify;
-  -webkit-justify-content: space-between;
-  justify-content: space-between;
+  -webkit-box-pack: center;
+  -moz-box-pack: center;
+  -o-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
   -webkit-box-align: stretch;
   -moz-box-align: stretch;
   -o-box-align: stretch;
   -ms-flex-align: stretch;
   -webkit-align-items: stretch;
   align-items: stretch;
-  margin-bottom: 25px;
-}
-@media all and (max-width: 640px) {
-  .likearts-content .print-form__flex-wrap {
-    margin-bottom: 0;
-  }
 }
 .likearts-content .print-form__btn {
   display: -webkit-box;
@@ -76,21 +70,11 @@
 .likearts-content .print-form__input-wrap {
   position: relative;
   width: 100%;
-  max-width: 370px;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 @media all and (max-width: 992px) {
   .likearts-content .print-form__input-wrap {
     margin-bottom: 10px;
-    max-width: none;
-  }
-}
-.likearts-content .print-form__group {
-  width: 50%;
-}
-@media all and (max-width: 992px) {
-  .likearts-content .print-form__group {
-    width: 100%;
   }
 }
 .likearts-content .print-form__input {
@@ -98,7 +82,6 @@
   width: 100%;
   background-color: transparent;
   border: 1px solid #e1e1e1;
-  border-radius: 50px;
   padding: 20px 50px 20px 24px;
   font-size: 1.6rem;
   font-weight: 100;
@@ -119,8 +102,6 @@
   background-color: #fff;
   color: #000;
   border: 1px solid #1ecef4;
-  -webkit-box-shadow: 0 0 30px rgba(30,206,244,0.5);
-  box-shadow: 0 0 30px rgba(30,206,244,0.5);
 }
 .likearts-content .print-form__input::-webkit-input-placeholder {
   font-weight: 100;
@@ -139,10 +120,8 @@
   color: #2c2c2c;
 }
 .likearts-content .print-form__textarea {
-  color: #f00;
   resize: none;
-  min-height: 160px;
-  border-radius: 30px;
+  min-height: 150px;
   text-align: left;
 }
 @media all and (max-width: 992px) {
@@ -200,4 +179,79 @@
 }
 .likearts-content .print-form .print-form__input--textarea:focus + .print-form__input-icon--textarea {
   background-image: url("../../images/icons/form/textarea--b.png");
+}
+.likearts-content .print-form .upload-btn-wrap {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: box;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -moz-box-orient: horizontal;
+  -o-box-orient: horizontal;
+  -webkit-box-lines: multiple;
+  -moz-box-lines: multiple;
+  -o-box-lines: multiple;
+  -webkit-flex-flow: row wrap;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
+  -webkit-box-pack: justify;
+  -moz-box-pack: justify;
+  -o-box-pack: justify;
+  -ms-flex-pack: justify;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  -o-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.likearts-content .print-form .upload-btn-wrap:last-child {
+  margin-bottom: 0;
+}
+.likearts-content .print-form .upload-btn-wrap__btn {
+  width: 100%;
+}
+@media all and (max-width: 640px) {
+  .likearts-content .print-form .upload-btn-wrap__btn {
+    margin-bottom: 10px;
+  }
+}
+.likearts-content .print-form .upload-btn-wrap__btn.js-is-selected {
+  width: 60%;
+}
+@media all and (max-width: 640px) {
+  .likearts-content .print-form .upload-btn-wrap__btn.js-is-selected {
+    width: 100%;
+  }
+}
+.likearts-content .print-form .upload-btn-wrap__sign {
+  display: none;
+  width: 40%;
+  padding-left: 40px;
+  font-size: 1.6rem;
+  font-weight: 100;
+}
+@media all and (max-width: 640px) {
+  .likearts-content .print-form .upload-btn-wrap__sign {
+    padding-left: 0;
+    text-align: center;
+    width: 100%;
+  }
+}
+.likearts-content .print-form .upload-btn-wrap__sign.js-is-selected {
+  display: block;
+}
+.likearts-content .print-form .upload-btn-wrap__sign-trigger {
+  color: #1ecef4;
+  border-bottom: 1px solid #1ecef4;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }

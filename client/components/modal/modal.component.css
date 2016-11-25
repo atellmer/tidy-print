@@ -13,6 +13,11 @@
   z-index: 10001;
   cursor: pointer;
 }
+.likearts-content .modals .modal-wrap {
+  position: relative;
+  width: 100%;
+  height: auto;
+}
 .likearts-content .print-modal {
   display: none;
   visibility: hidden;
@@ -24,56 +29,43 @@
   -o-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
-  width: 970px;
+  width: 570px;
   max-width: 100%;
   height: auto;
   background-color: #fff;
-  padding: 52px 100px;
+  padding: 58px 100px;
+  max-height: calc(100vh - 40px);
+  overflow: auto;
   z-index: 10001;
-  -webkit-perspective: 150px;
-  -moz-perspective: 150px;
-  -ms-perspective: 150px;
-  perspective: 150px;
 }
-@media all and (max-width: 992px) {
-  .likearts-content .print-modal {
-    width: calc(100% - 100px);
-    padding: 50px;
-  }
-}
-@media all and (max-width: 480px) {
+@media all and (max-width: 640px) {
   .likearts-content .print-modal {
     width: calc(100% - 40px);
-    max-height: calc(100vh - 40px);
-    padding: 10px;
-    overflow: auto;
+    padding: 20px;
   }
 }
 .likearts-content .print-modal__close-btn {
-  position: absolute;
+  position: relative;
   top: 0;
-  right: 0;
-  -webkit-transform: translate(100%, -100%);
-  -moz-transform: translate(100%, -100%);
-  -o-transform: translate(100%, -100%);
-  -ms-transform: translate(100%, -100%);
-  transform: translate(100%, -100%);
+  left: 100%;
+  -webkit-transform: translate(100%, 0%);
+  -moz-transform: translate(100%, 0%);
+  -o-transform: translate(100%, 0%);
+  -ms-transform: translate(100%, 0%);
+  transform: translate(100%, 0%);
+  margin-top: -40px;
   width: 40px;
   height: 40px;
-  border: 1px solid #fff;
   cursor: pointer;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+  background-color: #1ecef4;
 }
 @media all and (max-width: 640px) {
   .likearts-content .print-modal__close-btn {
-    -webkit-transform: translate(0, -100%);
-    -moz-transform: translate(0, -100%);
-    -o-transform: translate(0, -100%);
-    -ms-transform: translate(0, -100%);
-    transform: translate(0, -100%);
+    display: none;
   }
 }
 .likearts-content .print-modal__icon {
@@ -89,13 +81,12 @@
 }
 .likearts-content .print-modal__header {
   font-weight: 900;
-  font-size: 3rem;
+  font-size: 2rem;
   text-align: center;
-  margin-bottom: 55px;
+  margin-bottom: 39px;
 }
 @media all and (max-width: 992px) {
   .likearts-content .print-modal__header {
-    font-size: 2.4rem;
     margin-bottom: 20px;
   }
 }
