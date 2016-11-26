@@ -2,10 +2,10 @@
   position: relative;
   width: 100%;
   height: auto;
-  min-height: 1148px;
+  min-height: 1098px;
   background-image: url("../../images/section-3/bg/section-3.png");
   z-index: 80;
-  margin-top: -450px;
+  margin-top: -320px;
 }
 @media all and (max-width: 768px) {
   .likearts-content .section-3 {
@@ -13,7 +13,7 @@
   }
 }
 .likearts-content .section-3__shift {
-  padding-top: 485px;
+  padding-top: 350px;
 }
 .likearts-content .section-3__content {
   position: relative;
@@ -297,28 +297,24 @@
 }
 .likearts-content .section-3 .photo-block {
   position: absolute;
-  top: 78px;
-  right: 136px;
-  width: 308px;
-  height: 454px;
-}
-@media all and (max-width: 992px) {
-  .likearts-content .section-3 .photo-block {
-    right: 137px;
-  }
+  top: 140px;
+  right: 179px;
+  width: 234px;
+  height: 386px;
+  background-image: url("../../images/section-3/a-2.jpg");
 }
 .likearts-content .section-3 .js-is-A2 {
-  background-image: url("../../images/section-3/a-2.png");
+  background-image: url("../../images/section-3/a-2.jpg");
 }
 .likearts-content .section-3 .js-is-A3 {
-  background-image: url("../../images/section-3/a-3.png");
+  background-image: url("../../images/section-3/a-3.jpg");
 }
 .likearts-content .section-3 .js-is-A4 {
-  background-image: url("../../images/section-3/a-4.png");
+  background-image: url("../../images/section-3/a-4.jpg");
 }
 .likearts-content .section-3 .js-is-A5 {
-  background-image: url("../../images/section-3/a-5.png");
+  background-image: url("../../images/section-3/a-5.jpg");
 }
 .likearts-content .section-3 .js-is-A6 {
-  background-image: url("../../images/section-3/a-6.png");
+  background-image: url("../../images/section-3/a-6.jpg");
 }

@@ -3,14 +3,9 @@
   width: 100%;
   height: auto;
   min-height: 1577px;
-  background-image: url("../../images/section-4/bg/section-4.png");
+  background-image: url("../../images/section-4/bg/section-4.jpg");
   z-index: 70;
-  margin-top: -760px;
-}
-@media all and (max-width: 768px) {
-  .likearts-content .section-4 {
-    margin-top: -820px;
-  }
+  margin-top: -835px;
 }
 .likearts-content .section-4__shift {
   padding-top: 840px;
