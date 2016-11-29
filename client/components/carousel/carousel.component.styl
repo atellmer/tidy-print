@@ -78,3 +78,29 @@
 
 .slick-slide, .slick-slide *
 	outline none!important
+
+.likearts-content .slick-dots
+	width 100%
+	max-width 100px
+	padding 0
+	list-style none
+	display flex
+	justify-content space-between
+	align-items center
+	margin 20px auto
+
+	button
+		display none
+
+	li
+		width 8px
+		height 8px
+		background-color rgba(0, 0, 0, 0.5)
+		border-radius 50%
+		cursor pointer
+
+	li.slick-active
+		background-color $primary-color
+		width 12px
+		height 12px
+
