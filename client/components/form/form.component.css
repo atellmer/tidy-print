@@ -180,78 +180,9 @@
 .likearts-content .print-form .print-form__input--textarea:focus + .print-form__input-icon--textarea {
   background-image: url("../../images/icons/form/textarea--b.png");
 }
-.likearts-content .print-form .upload-btn-wrap {
-  display: -webkit-box;
-  display: -moz-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: box;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -moz-box-orient: horizontal;
-  -o-box-orient: horizontal;
-  -webkit-box-lines: multiple;
-  -moz-box-lines: multiple;
-  -o-box-lines: multiple;
-  -webkit-flex-flow: row wrap;
-  -ms-flex-flow: row wrap;
-  flex-flow: row wrap;
-  -webkit-box-pack: justify;
-  -moz-box-pack: justify;
-  -o-box-pack: justify;
-  -ms-flex-pack: justify;
-  -webkit-justify-content: space-between;
-  justify-content: space-between;
-  -webkit-box-align: center;
-  -moz-box-align: center;
-  -o-box-align: center;
-  -ms-flex-align: center;
-  -webkit-align-items: center;
-  align-items: center;
-  margin-bottom: 20px;
-}
-.likearts-content .print-form .upload-btn-wrap:last-child {
-  margin-bottom: 0;
-}
-.likearts-content .print-form .upload-btn-wrap__btn {
-  width: 100%;
-}
-@media all and (max-width: 640px) {
-  .likearts-content .print-form .upload-btn-wrap__btn {
-    margin-bottom: 10px;
-  }
-}
-.likearts-content .print-form .upload-btn-wrap__btn.js-is-selected {
-  width: 60%;
-}
-@media all and (max-width: 640px) {
-  .likearts-content .print-form .upload-btn-wrap__btn.js-is-selected {
-    width: 100%;
-  }
-}
-.likearts-content .print-form .upload-btn-wrap__sign {
-  display: none;
-  width: 40%;
-  padding-left: 40px;
+.likearts-content .print-form .sign {
+  text-align: center;
+  margin-top: 15px;
   font-size: 1.6rem;
   font-weight: 100;
-}
-@media all and (max-width: 640px) {
-  .likearts-content .print-form .upload-btn-wrap__sign {
-    padding-left: 0;
-    text-align: center;
-    width: 100%;
-  }
-}
-.likearts-content .print-form .upload-btn-wrap__sign.js-is-selected {
-  display: block;
-}
-.likearts-content .print-form .upload-btn-wrap__sign-trigger {
-  color: #1ecef4;
-  border-bottom: 1px solid #1ecef4;
-  cursor: pointer;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
 }
