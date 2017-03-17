@@ -14,12 +14,12 @@
 					'js-is-A4',
 					'js-is-A3',
 					'js-is-A2'
-				];
+				], i;
 
-		items.forEach(function(item) {
-			item.addEventListener('mouseover', mouseOverHandler);
-			item.addEventListener('mouseleave', mouseLeaveHandler);
-		});
+		for (var i = 0; i < items.length; i++) {
+			items[i].addEventListener('mouseover', mouseOverHandler);
+			items[i].addEventListener('mouseleave', mouseLeaveHandler);
+		}
 
 		function mouseOverHandler(e) {
 			e.stopPropagation();

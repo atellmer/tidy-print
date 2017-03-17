@@ -119,8 +119,7 @@
 }
 .likearts-content .section-4__cover {
   width: 100%;
-  height: auto;
-  min-height: 411px;
+  height: 411px;
   display: -webkit-box;
   display: -moz-box;
   display: -webkit-flex;
